@@ -1,0 +1,57 @@
+name: Pasta Carbonara
+category: italian
+servings: 2
+prepTime: 20
+
+description: Classic Italian pasta dish with eggs, cheese, and bacon
+
+ingredients:
+  - name: Spaghetti
+    amount: 200g
+    allergens:
+      - gluten
+    notes: Contains wheat flour
+
+  - name: Eggs
+    amount: 2 large
+    allergens:
+      - eggs
+    notes: Room temperature eggs work best
+
+  - name: Parmesan cheese
+    amount: 50g (grated)
+    allergens:
+      - dairy
+    notes: Parmigiano-Reggiano preferred
+
+  - name: Pecorino Romano
+    amount: 30g (grated)
+    allergens:
+      - dairy
+    notes: For authentic flavor
+
+  - name: Bacon (guanciale or pancetta)
+    amount: 100g
+    allergens: []
+    crossContamination:
+      - gluten
+    notes: Some bacon contains gluten in processing/smoking
+
+  - name: Black pepper
+    amount: 1 tsp (freshly ground)
+    allergens: []
+
+  - name: Salt
+    amount: To taste
+    allergens: []
+
+warnings:
+  - Use dedicated pasta water (no shared equipment with gluten-free dishes)
+  - Separate cutting board for egg preparation
+  - Check bacon ingredients - some contain gluten
+  - Raw eggs in final dish - may be concern for some customers
+
+notes:
+  - Traditional carbonara uses no cream
+  - Egg should be added off heat to avoid scrambling
+  - Pecorino can be replaced with all Parmesan if unavailable

@@ -1,0 +1,215 @@
+{
+  "substitutions": {
+    "gluten": [
+      {
+        "original": "wheat pasta",
+        "alternative": "rice pasta",
+        "ratio": "1:1",
+        "notes": "Same cooking time. Slightly different texture. Works well for most pasta dishes.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "wheat pasta",
+        "alternative": "corn pasta",
+        "ratio": "1:1",
+        "notes": "Can be slightly softer. Watch cooking time carefully.",
+        "cookingAdjustment": "Reduce cooking time by 1-2 minutes"
+      },
+      {
+        "original": "wheat flour",
+        "alternative": "rice flour + xanthan gum",
+        "ratio": "1:1 flour + 1/4 tsp xanthan per cup",
+        "notes": "Add xanthan gum for binding. Best for baking.",
+        "cookingAdjustment": "May need slightly more liquid"
+      },
+      {
+        "original": "bread",
+        "alternative": "gluten-free bread",
+        "ratio": "1:1",
+        "notes": "Many brands available. Texture differs from wheat bread.",
+        "cookingAdjustment": "Toast for better texture"
+      },
+      {
+        "original": "soy sauce",
+        "alternative": "tamari (gluten-free)",
+        "ratio": "1:1",
+        "notes": "Tamari is gluten-free soy sauce. Nearly identical flavor.",
+        "cookingAdjustment": "None needed"
+      }
+    ],
+    "eggs": [
+      {
+        "original": "eggs (binding in baking)",
+        "alternative": "flax eggs",
+        "ratio": "1 egg = 1 tbsp ground flax + 3 tbsp water",
+        "notes": "Let sit 5 minutes before using. Works for binding, not for rising.",
+        "cookingAdjustment": "Mix and let gel before adding"
+      },
+      {
+        "original": "eggs (leavening)",
+        "alternative": "baking powder + vinegar",
+        "ratio": "1 egg = 1 tsp baking powder + 1 tbsp vinegar",
+        "notes": "Helps with rise. Add vinegar to wet ingredients, baking powder to dry.",
+        "cookingAdjustment": "Add acid separately"
+      },
+      {
+        "original": "mayonnaise",
+        "alternative": "vegan mayo",
+        "ratio": "1:1",
+        "notes": "Many brands available. Very similar taste and texture.",
+        "cookingAdjustment": "None needed"
+      }
+    ],
+    "dairy": [
+      {
+        "original": "butter",
+        "alternative": "olive oil",
+        "ratio": "1 cup butter = 3/4 cup olive oil",
+        "notes": "Use 75% of butter amount. Adds different flavor profile.",
+        "cookingAdjustment": "Reduce amount by 25%"
+      },
+      {
+        "original": "butter (baking)",
+        "alternative": "coconut oil",
+        "ratio": "1:1",
+        "notes": "Solid at room temp like butter. Mild coconut flavor.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "milk",
+        "alternative": "oat milk",
+        "ratio": "1:1",
+        "notes": "Neutral flavor. Good for cooking and baking.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "milk",
+        "alternative": "almond milk",
+        "ratio": "1:1",
+        "notes": "Slightly nutty flavor. Thinner than dairy milk.",
+        "cookingAdjustment": "May need to reduce other liquids slightly"
+      },
+      {
+        "original": "cream",
+        "alternative": "coconut cream",
+        "ratio": "1:1",
+        "notes": "Rich and creamy. Slight coconut flavor.",
+        "cookingAdjustment": "Chill can first, use thick part"
+      },
+      {
+        "original": "parmesan cheese",
+        "alternative": "nutritional yeast",
+        "ratio": "1 tbsp cheese = 2 tbsp nutritional yeast",
+        "notes": "Savory, cheesy flavor. Not identical but works well.",
+        "cookingAdjustment": "Use double amount"
+      }
+    ],
+    "nuts": [
+      {
+        "original": "pesto (with pine nuts)",
+        "alternative": "pesto with sunflower seeds",
+        "ratio": "1:1",
+        "notes": "Toast sunflower seeds first. Very similar flavor.",
+        "cookingAdjustment": "Toast seeds before blending"
+      },
+      {
+        "original": "almond flour",
+        "alternative": "sunflower seed flour",
+        "ratio": "1:1",
+        "notes": "Grind sunflower seeds into flour. May turn green when baked (harmless).",
+        "cookingAdjustment": "Add 1 tsp vinegar to prevent greening"
+      }
+    ],
+    "peanuts": [
+      {
+        "original": "peanut butter",
+        "alternative": "sunflower seed butter",
+        "ratio": "1:1",
+        "notes": "Similar texture and use. Different flavor but works well.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "peanut oil",
+        "alternative": "sunflower oil",
+        "ratio": "1:1",
+        "notes": "High smoke point. Good for frying.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "satay sauce",
+        "alternative": "sunflower seed satay sauce",
+        "ratio": "1:1",
+        "notes": "Use sunflower seed butter instead of peanut butter in recipe.",
+        "cookingAdjustment": "Recipe modification needed"
+      }
+    ],
+    "soybeans": [
+      {
+        "original": "soy sauce",
+        "alternative": "coconut aminos",
+        "ratio": "1:1",
+        "notes": "Soy-free alternative. Slightly sweeter than soy sauce.",
+        "cookingAdjustment": "May want to reduce sugar in recipe"
+      },
+      {
+        "original": "tofu",
+        "alternative": "chickpea tofu",
+        "ratio": "1:1",
+        "notes": "Made from chickpea flour. Different texture but similar use.",
+        "cookingAdjustment": "Firmer than soy tofu"
+      }
+    ],
+    "fish": [
+      {
+        "original": "fish sauce",
+        "alternative": "soy sauce + lime juice",
+        "ratio": "1 tbsp fish sauce = 1 tbsp soy sauce + 1/2 tsp lime juice",
+        "notes": "Not identical but provides umami + acidity.",
+        "cookingAdjustment": "Add lime juice separately"
+      },
+      {
+        "original": "anchovies (in caesar dressing)",
+        "alternative": "capers + soy sauce",
+        "ratio": "2 anchovies = 1 tsp capers + 1/4 tsp soy sauce",
+        "notes": "Provides salty, umami flavor.",
+        "cookingAdjustment": "Mash capers finely"
+      }
+    ],
+    "sesame": [
+      {
+        "original": "tahini",
+        "alternative": "sunflower seed butter",
+        "ratio": "1:1",
+        "notes": "Different flavor but similar consistency.",
+        "cookingAdjustment": "None needed"
+      },
+      {
+        "original": "sesame oil",
+        "alternative": "olive oil + toasted pumpkin seed oil",
+        "ratio": "1 part olive + 1 part pumpkin seed oil",
+        "notes": "Pumpkin seed oil provides nutty flavor.",
+        "cookingAdjustment": "Mix oils together"
+      }
+    ]
+  },
+  "generalGuidelines": {
+    "alwaysCheck": [
+      "Read all ingredient labels carefully",
+      "Ask about cooking equipment (shared fryers, pans)",
+      "Inform all kitchen staff about allergen restriction",
+      "Have backup plan if substitution doesn't work"
+    ],
+    "crossContaminationPrevention": [
+      "Use separate cutting boards",
+      "Clean all utensils thoroughly",
+      "Use dedicated pans/pots when possible",
+      "Change gloves between allergen and allergen-free prep",
+      "Store allergen-free ingredients separately"
+    ]
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-18",
+    "source": "Compiled from food allergy resources and restaurant best practices"
+  }
+}

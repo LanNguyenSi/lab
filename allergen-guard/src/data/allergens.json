@@ -1,0 +1,340 @@
+{
+  "allergens": {
+    "gluten": {
+      "name": "Gluten",
+      "sources": [
+        "wheat",
+        "rye",
+        "barley",
+        "oats",
+        "spelt",
+        "kamut",
+        "wheat flour",
+        "bread",
+        "pasta",
+        "couscous",
+        "bulgur",
+        "semolina",
+        "malt",
+        "beer",
+        "soy sauce"
+      ],
+      "hiddenSources": [
+        "modified food starch",
+        "hydrolyzed vegetable protein",
+        "textured vegetable protein",
+        "malt flavoring",
+        "brewer's yeast"
+      ],
+      "severity": "HIGH",
+      "description": "Protein found in wheat and related grains. Causes celiac disease in susceptible individuals."
+    },
+    "crustaceans": {
+      "name": "Crustaceans",
+      "sources": [
+        "shrimp",
+        "prawns",
+        "crab",
+        "lobster",
+        "crayfish",
+        "langoustine"
+      ],
+      "hiddenSources": [
+        "fish stock",
+        "seafood flavoring",
+        "surimi",
+        "glucosamine supplements"
+      ],
+      "severity": "CRITICAL",
+      "description": "Shellfish with external skeletons. Can cause severe allergic reactions."
+    },
+    "eggs": {
+      "name": "Eggs",
+      "sources": [
+        "eggs",
+        "egg white",
+        "egg yolk",
+        "mayonnaise",
+        "meringue",
+        "custard",
+        "hollandaise sauce",
+        "carbonara sauce",
+        "aioli"
+      ],
+      "hiddenSources": [
+        "albumin",
+        "globulin",
+        "lecithin (sometimes)",
+        "lysozyme",
+        "ovalbumin",
+        "ovomucin",
+        "pasta (some types)",
+        "baked goods"
+      ],
+      "severity": "HIGH",
+      "description": "Common ingredient in many dishes. One of the most common food allergies in children."
+    },
+    "fish": {
+      "name": "Fish",
+      "sources": [
+        "salmon",
+        "tuna",
+        "cod",
+        "bass",
+        "trout",
+        "mackerel",
+        "sardines",
+        "anchovies",
+        "fish sauce",
+        "worcestershire sauce"
+      ],
+      "hiddenSources": [
+        "caesar dressing",
+        "caponata",
+        "imitation crab",
+        "surimi",
+        "omega-3 supplements"
+      ],
+      "severity": "CRITICAL",
+      "description": "Includes all finned fish. Allergies often persist throughout life."
+    },
+    "peanuts": {
+      "name": "Peanuts",
+      "sources": [
+        "peanuts",
+        "peanut butter",
+        "peanut oil",
+        "satay sauce",
+        "kung pao chicken",
+        "pad thai"
+      ],
+      "hiddenSources": [
+        "mixed nuts",
+        "african cuisine",
+        "asian cuisine",
+        "marzipan (sometimes)",
+        "nougat",
+        "hydrolyzed plant protein",
+        "vegetable oil (mixed)"
+      ],
+      "severity": "CRITICAL",
+      "description": "One of the most common and severe food allergies. Can cause anaphylaxis."
+    },
+    "soybeans": {
+      "name": "Soybeans",
+      "sources": [
+        "soybeans",
+        "soy sauce",
+        "tofu",
+        "edamame",
+        "miso",
+        "tempeh",
+        "soy milk",
+        "soy protein"
+      ],
+      "hiddenSources": [
+        "vegetable oil",
+        "lecithin",
+        "mono-diglycerides",
+        "textured vegetable protein",
+        "hydrolyzed vegetable protein",
+        "asian cuisine"
+      ],
+      "severity": "MODERATE",
+      "description": "Very common ingredient in processed foods and Asian cuisine."
+    },
+    "dairy": {
+      "name": "Milk/Dairy",
+      "sources": [
+        "milk",
+        "cream",
+        "butter",
+        "cheese",
+        "yogurt",
+        "ice cream",
+        "whey",
+        "casein",
+        "lactose"
+      ],
+      "hiddenSources": [
+        "caramel flavoring",
+        "chocolate",
+        "lactic acid starter culture",
+        "margarine",
+        "nougat",
+        "baked goods",
+        "processed meats"
+      ],
+      "severity": "HIGH",
+      "description": "Milk and all products derived from milk. Very common allergen especially in children."
+    },
+    "nuts": {
+      "name": "Tree Nuts",
+      "sources": [
+        "almonds",
+        "hazelnuts",
+        "walnuts",
+        "cashews",
+        "pecans",
+        "pistachios",
+        "macadamia nuts",
+        "brazil nuts",
+        "pine nuts",
+        "nut oils",
+        "nut butters"
+      ],
+      "hiddenSources": [
+        "pesto",
+        "marzipan",
+        "nougat",
+        "gianduja",
+        "praline",
+        "artificial flavoring",
+        "natural flavoring",
+        "mortadella"
+      ],
+      "severity": "CRITICAL",
+      "description": "Includes all tree nuts. Can cause severe reactions. Distinct from peanut allergy."
+    },
+    "celery": {
+      "name": "Celery",
+      "sources": [
+        "celery",
+        "celery root",
+        "celeriac",
+        "celery seed",
+        "celery salt"
+      ],
+      "hiddenSources": [
+        "vegetable stock",
+        "bouillon",
+        "soup bases",
+        "spice mixes",
+        "prepared salads"
+      ],
+      "severity": "MODERATE",
+      "description": "Common in European cuisine. Can cause severe reactions in some individuals."
+    },
+    "mustard": {
+      "name": "Mustard",
+      "sources": [
+        "mustard",
+        "mustard seed",
+        "mustard powder",
+        "dijon mustard",
+        "whole grain mustard",
+        "yellow mustard"
+      ],
+      "hiddenSources": [
+        "curry powder",
+        "mayonnaise",
+        "salad dressings",
+        "barbecue sauce",
+        "marinades",
+        "pickles"
+      ],
+      "severity": "MODERATE",
+      "description": "Common condiment and ingredient in sauces. Regulated allergen in EU."
+    },
+    "sesame": {
+      "name": "Sesame",
+      "sources": [
+        "sesame seeds",
+        "tahini",
+        "sesame oil",
+        "hummus",
+        "baba ganoush",
+        "halva"
+      ],
+      "hiddenSources": [
+        "baked goods",
+        "bread",
+        "bagels",
+        "crackers",
+        "asian cuisine",
+        "middle eastern cuisine",
+        "vegetable oil blends"
+      ],
+      "severity": "HIGH",
+      "description": "Increasingly common allergen. Can cause severe reactions."
+    },
+    "sulphites": {
+      "name": "Sulphites",
+      "sources": [
+        "wine",
+        "beer",
+        "dried fruits",
+        "preserved vegetables",
+        "fruit juices"
+      ],
+      "hiddenSources": [
+        "vinegar",
+        "pickled foods",
+        "processed potatoes",
+        "shellfish",
+        "medications"
+      ],
+      "severity": "MODERATE",
+      "description": "Preservatives used in many foods and beverages. Regulated when >10mg/kg."
+    },
+    "lupin": {
+      "name": "Lupin",
+      "sources": [
+        "lupin flour",
+        "lupin beans",
+        "lupin protein"
+      ],
+      "hiddenSources": [
+        "gluten-free products",
+        "baked goods",
+        "pasta",
+        "vegetarian products"
+      ],
+      "severity": "MODERATE",
+      "description": "Legume used as alternative to wheat flour. Common in gluten-free products."
+    },
+    "molluscs": {
+      "name": "Molluscs",
+      "sources": [
+        "snails",
+        "squid",
+        "octopus",
+        "mussels",
+        "oysters",
+        "clams",
+        "scallops"
+      ],
+      "hiddenSources": [
+        "seafood stock",
+        "paella",
+        "bouillabaisse",
+        "seafood flavoring",
+        "fish sauce (some)"
+      ],
+      "severity": "CRITICAL",
+      "description": "Shellfish without external skeletons. Can cause severe allergic reactions."
+    }
+  },
+  "crossReactivity": {
+    "crustaceans-molluscs": {
+      "allergens": ["crustaceans", "molluscs"],
+      "risk": "HIGH",
+      "description": "People allergic to crustaceans may also react to molluscs"
+    },
+    "peanuts-soybeans": {
+      "allergens": ["peanuts", "soybeans"],
+      "risk": "MODERATE",
+      "description": "Both legumes, some cross-reactivity possible"
+    },
+    "celery-birchpollen": {
+      "allergens": ["celery"],
+      "risk": "MODERATE",
+      "description": "Birch pollen allergy sufferers may react to celery (oral allergy syndrome)"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "standard": "EU EFSA 14 + FDA Top 9",
+    "lastUpdated": "2026-03-18"
+  }
+}

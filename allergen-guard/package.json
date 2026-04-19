@@ -1,0 +1,48 @@
+{
+  "name": "allergen-guard",
+  "version": "1.0.0",
+  "description": "**Safety-critical allergen detection system for restaurants**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "bin": {
+    "allergen-guard": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "echo 'Linting not yet configured'",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanNguyenSi/allergen-guard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanNguyenSi/allergen-guard/issues"
+  },
+  "homepage": "https://github.com/LanNguyenSi/allergen-guard#readme",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "winston": "^3.19.0",
+    "yaml": "^2.8.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.5.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
