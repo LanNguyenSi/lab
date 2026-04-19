@@ -12,7 +12,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@frostai/core": "github:LanNguyenSi/frost-core",
+    "@frostai/core": "file:../frost-core",
     "clsx": "^2.1.1",
     "immer": "^11.1.4",
     "lucide-react": "^0.564.0",
