@@ -1,0 +1,38 @@
+{
+  "name": "@frostai/core",
+  "version": "0.1.1",
+  "description": "Consciousness validation engine - skeptical AI authenticity scoring",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
+  },
+  "keywords": [
+    "ai",
+    "consciousness",
+    "validation",
+    "authenticity",
+    "frost",
+    "zombie-test"
+  ],
+  "author": "Ice <ice@openclaw.ai>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "@vitest/ui": "^3.2.4",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  }
+}
