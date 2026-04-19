@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  tests:
+    name: Tests (PHP ${{ matrix.php }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # PHP 8.3 is the new floor: phpunit 12.5.22+ (fix for
+        # GHSA-qrr6-mg7r-m243, HIGH — argument injection via newline in
+        # PHP INI values forwarded to child processes) requires 8.3.
+        # 8.1 EOL'd 2025-12-31 and 8.2 is on its way (EOL 2026-12-31),
+        # so narrowing the matrix here in lockstep with the CVE fix.
+        php: ['8.3', '8.4']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: ctype, iconv, mbstring
+          coverage: xdebug
+
+      - name: Get Composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: php-${{ matrix.php }}-composer-${{ hashFiles('composer.lock') }}
+          restore-keys: php-${{ matrix.php }}-composer-
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Run tests
+        run: composer test
+
+  phpstan:
+    name: Static Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          # Matches the new project floor (composer.json php: ^8.3);
+          # see the tests matrix above for the rationale.
+          php-version: '8.3'
+          extensions: ctype, iconv, mbstring
+
+      - name: Get Composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: php-8.3-composer-${{ hashFiles('composer.lock') }}
+          restore-keys: php-8.3-composer-
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Warm up Symfony test cache
+        run: php bin/console cache:warmup --env=test
+
+      - name: Run PHPStan
+        run: composer phpstan

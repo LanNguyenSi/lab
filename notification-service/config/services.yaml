@@ -1,0 +1,45 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/Kernel.php'
+
+    App\Controller\:
+        resource: '../src/Controller/'
+        public: true
+        tags: ['controller.service_arguments']
+
+    App\Infrastructure\Logger\LoggerInterface: '@App\Infrastructure\Logger\StdoutLogger'
+    App\Contract\Interface\NotificationValidatorInterface: '@App\Validator\NotificationValidator'
+    App\Contract\Interface\ChannelRouterInterface: '@App\Router\ChannelRouter'
+    App\Contract\Interface\NotificationServiceInterface: '@App\Service\NotificationDispatcher'
+    App\Contract\Interface\NotificationRepositoryInterface: '@App\Infrastructure\Persistence\NotificationRepository'
+
+    App\Infrastructure\Persistence\NotificationRepository:
+        arguments:
+            $storagePath: '%kernel.project_dir%/var/notifications'
+
+    App\Security\ApiKeyAuthenticator:
+        arguments:
+            $apiKeys: '%env(default::API_KEYS)%'
+
+    App\Channel\Email\SmtpClientInterface: '@App\Channel\Email\MockSmtpClient'
+    App\Channel\SMS\SmsGatewayInterface: '@App\Channel\SMS\MockSmsGateway'
+    App\Channel\Push\PushNotificationInterface: '@App\Channel\Push\MockPushProvider'
+
+    App\Channel\Email\EmailChannel:
+        tags: ['app.notification_channel']
+
+    App\Channel\SMS\SMSChannel:
+        tags: ['app.notification_channel']
+
+    App\Channel\Push\PushChannel:
+        tags: ['app.notification_channel']
+
+    App\Router\ChannelRouter:
+        arguments:
+            $channels: !tagged_iterator app.notification_channel
