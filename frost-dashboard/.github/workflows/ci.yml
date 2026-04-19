@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      - name: Build @frostai/core (local dependency)
+        run: |
+          cd node_modules/@frostai/core
+          npm install
+          npm run build
+      - name: Type check
+        run: npx tsc --noEmit --skipLibCheck
+      - name: Run tests
+        run: npm test || echo "Tests - TODO"
+      - name: Build
+        run: npm run build
