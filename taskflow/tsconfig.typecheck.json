@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "prisma.config.ts",
+    "**/*.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "jest.setup.ts"
+  ]
+}

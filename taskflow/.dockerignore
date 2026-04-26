@@ -1,0 +1,13 @@
+.git
+.gitignore
+.next
+.swc
+coverage
+node_modules
+npm-debug.log*
+.env
+.env.local
+data/*.db
+data/*.db-journal
+dev.db
+dev.db-journal
