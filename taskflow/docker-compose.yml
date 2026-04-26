@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      HOSTNAME: 0.0.0.0
+      PORT: 3000
+      DATABASE_URL: ${DATABASE_URL:-file:../data/taskflow.db}
+      NEXTAUTH_URL: ${NEXTAUTH_URL:-http://localhost:3000}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET:-change-me-to-a-long-random-string}
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    volumes:
+      - taskflow_data:/app/data
+
+volumes:
+  taskflow_data:
