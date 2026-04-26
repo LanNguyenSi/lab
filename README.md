@@ -12,6 +12,7 @@ A home for smaller, self-contained projects. Each subdirectory used to live as i
 | [`plagiarism-coach`](./plagiarism-coach) | Node/TS CLI | Pedagogical tool for plagiarism reflection. |
 | [`notification-service`](./notification-service) | PHP | Notification dispatcher service. |
 | [`taskflow`](./taskflow) | Next.js / Prisma / SQLite | Multilingual personal task manager (EN/DE/VI). Imported as-is; not in the matrix CI. |
+| [`telerithm-playground`](./telerithm-playground) | Next.js | Interactive demo for Telerithm — trigger logs, see them live, try AI queries. Imported as-is; not in the matrix CI. |
 | [`ai-freedom-manifesto`](./ai-freedom-manifesto) | Docs | Essay/manifesto on AI autonomy. |
 | [`ai-human-collaboration-playbook`](./ai-human-collaboration-playbook) | Docs | Patterns, anti-patterns, and case studies for human–AI collaboration. |
 
