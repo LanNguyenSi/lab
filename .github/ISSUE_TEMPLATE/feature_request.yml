@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a feature in a lab sub-project (or a new sub-project)
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: subproject
+    attributes:
+      label: Sub-project
+      options:
+        - ai-freedom-manifesto
+        - ai-human-collaboration-playbook
+        - allergen-guard
+        - frost-core
+        - frost-dashboard
+        - notification-service
+        - plagiarism-coach
+        - taskflow
+        - telerithm-playground
+        - new sub-project
+        - other / unsure
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
